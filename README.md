@@ -7,17 +7,17 @@
 
 ## Overview 🌟
 
-**FlaskMasterBlog** یک وبلاگ حرفه‌ای و مدرن است که با **Flask** طراحی شده و شامل سیستم مدیریت کاربران، مقالات، دیدگاه‌ها و تولید PDF می‌باشد. این پروژه برای وبلاگ شخصی یا آموزشی با قابلیت‌های پیشرفته و توسعه‌پذیر مناسب است.
+**FlaskMasterBlog** is a modern and professional blog built with **Flask**, featuring user management, posts, comments, and PDF generation. It is suitable for personal or educational blogs with advanced features and high scalability.
 
 ## Key Features ✨
 
-- ورود کاربران با **رمز عبور یا OTP ایمیلی**  
-- پروفایل کاربری با تصویر اختصاصی  
-- ایجاد، ویرایش و حذف مقالات  
-- مدیریت دیدگاه‌ها و پاسخ‌ها  
-- سیستم صفحه‌بندی (Pagination) برای لیست مقالات  
-- تولید PDF از محتوا مقالات و ارائه به کاربران  
-- امنیت فرم‌ها با **Google reCAPTCHA**  
+- User login with **password or email OTP**  
+- User profiles with avatar support  
+- Create, edit, and delete posts  
+- Manage comments and replies  
+- Pagination for post listings  
+- Generate PDFs from post content and provide them to users  
+- Form security with **Google reCAPTCHA**  
 
 ## Project Structure 📂
 
@@ -49,17 +49,17 @@ FlaskMasterBlog/
 - **Flask 3.x**  
 - **Flask-Login, Flask-Mail, Flask-WTF**  
 - **SQLAlchemy**  
-- **FPDF** برای تولید PDF  
-- **Jinja2** برای قالب‌بندی HTML  
+- **FPDF** for PDF generation  
+- **Jinja2** for HTML templating  
 
 ## Contribution 🤝
 
-پروژه باز و قابل توسعه است. برای مشارکت:  
-1. Fork کنید  
-2. Branch جدید بسازید  
-3. تغییرات را Commit و Push کنید  
-4. Pull request بسازید  
+This project is open and extensible. To contribute:  
+1. Fork the repository  
+2. Create a new branch  
+3. Commit and push your changes  
+4. Open a Pull Request  
 
 ## License 📜
 
-این پروژه تحت **MIT License** منتشر شده است.
+This project is licensed under the **MIT License**.
