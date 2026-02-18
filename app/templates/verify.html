@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h3>Enter OTP Code</h3>
+
+<form method="POST">
+    {{ form.hidden_tag() }}
+    {{ form.code(class="form-control mb-2") }}
+    {{ form.submit(class="btn btn-success") }}
+</form>
+
+{% endblock %}

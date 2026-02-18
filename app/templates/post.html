@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h2>{{ post.title }}</h2>
+<p>{{ post.content }}</p>
+
+<a href="{{ url_for('static', filename=pdf_path) }}"
+   class="btn btn-outline-dark btn-sm">
+   Download PDF
+</a>
+
+<hr>
+
+<h4>Comments</h4>
+
+{% for comment in post.comments %}
+<div class="card p-2 mb-2">
+    <b>{{ comment.user.username }}</b>
+    <p>{{ comment.content }}</p>
+</div>
+{% endfor %}
+
+{% if current_user.is_authenticated %}
+<form method="POST">
+    {{ form.hidden_tag() }}
+    {{ form.content(class="form-control mb-2") }}
+    {{ form.submit(class="btn btn-dark btn-sm") }}
+</form>
+{% endif %}
+
+{% endblock %}
